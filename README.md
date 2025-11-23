@@ -1,4 +1,6 @@
 Plagiarism Detector
+...................
+
 A Python-based application that compares two text documents to determine their content similarity using the Jaccard Similarity algorithm.
 
 Project Overview
@@ -10,13 +12,14 @@ Essay 2: The Making of a Villain: Adolf Hitler
 The application processes text documents, removes stop words, and calculates a similarity percentage based on shared vocabulary and content overlap.
 
 Features
+........
 
 Core Functionality
-Text Processing: Converts text to lowercase, removes punctuation, filters stop words
-Word Search: Search for specific words and see their frequency in each essay
-Common Words Analysis: Identifies words that appear in both essays
-Plagiarism Detection: Calculates similarity percentage using Jaccard Similarity formula
-Report Generation: Option to save detailed similarity reports
+- Text Processing: Converts text to lowercase, removes punctuation, filters stop words
+- Word Search: Search for specific words and see their frequency in each essay
+- Common Words Analysis: Identifies words that appear in both essays
+- Plagiarism Detection: Calculates similarity percentage using Jaccard Similarity formula
+- Report Generation: Option to save detailed similarity reports
 
 Quality Features
 Comprehensive error handling and validation

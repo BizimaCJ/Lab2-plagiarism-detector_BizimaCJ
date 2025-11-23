@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to create the necessary directory structure for the plagiarism detector with essays/ , reports/ , setup.log
+# Script to create the necessary directory structure for the plagiarism detector
 
 echo "Plagiarism Detector - Setup Script"
 echo ".................................."

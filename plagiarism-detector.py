@@ -203,43 +203,43 @@ def main():
 			break
 
 		elif choice == "2":
-    print("\nPaste Essay 1. When done, type a single line with 'END':\n")
-    lines1 = []
-    while True:
-        line = input()
-        if line.strip().upper() == "END":
-            break
-        lines1.append(line)
-    essay1_text = "\n".join(lines1)
+			print("\nPaste Essay 1. When done, type a single line with 'END':\n")
+			lines1 = []
+			while True:
+				line = input()
+				if line.strip().upper() == "END":
+						break
+				lines1.append(line)
+			essay1_text = "\n".join(lines1)
 
-    print("\nPaste Essay 2. When done, type 'END':\n")
-    lines2 = []
-    while True:
-        line = input()
-        if line.strip().upper() == "END":
-            break
-        lines2.append(line)
-    essay2_text = "\n".join(lines2)
+			print("\nPaste Essay 2. When done, type 'END':\n")
+			lines2 = []
+			while True:
+				line = input()
+				if line.strip().upper() == "END":
+						break
+				lines2.append(line)
+			essay2_text = "\n".join(lines2)
 
-    # Ensure essays directory exists
-    essays_dir = "essays"
-    if not os.path.exists(essays_dir):
-        os.makedirs(essays_dir)
-        print(f"\nCreated '{essays_dir}' directory")
+			# Ensure essays directory exists
+			essays_dir = "essays"
+			if not os.path.exists(essays_dir):
+				os.makedirs(essays_dir)
+				print(f"\nCreated '{essays_dir}' directory")
 
-    # Save Essay 1
-    essay1_path = os.path.join(essays_dir, "essay1.txt")
-    with open(essay1_path, "w", encoding="utf-8") as f:
-        f.write(essay1_text)
-    print(f"\nSaved Essay 1 to {essay1_path}")
+			# Save Essay 1
+			essay1_path = os.path.join(essays_dir, "essay1.txt")
+			with open(essay1_path, "w", encoding="utf-8") as f:
+				f.write(essay1_text)
+			print(f"\nSaved Essay 1 to {essay1_path}")
 
-    # Save Essay 2
-    essay2_path = os.path.join(essays_dir, "essay2.txt")
-    with open(essay2_path, "w", encoding="utf-8") as f:
-        f.write(essay2_text)
-    print(f"Saved Essay 2 to {essay2_path}")
+			# Save Essay 2
+			essay2_path = os.path.join(essays_dir, "essay2.txt")
+			with open(essay2_path, "w", encoding="utf-8") as f:
+				f.write(essay2_text)
+			print(f"Saved Essay 2 to {essay2_path}")
 
-    break
+			break
 
 		else:
 			print("Invalid choice. Enter 1 or 2.")
